@@ -1,0 +1,570 @@
+/* Colors Palette used in the provided design:
+
+Green: #54be90
+White: #ffffff
+Light grey: #ebebeb
+Text grey: #444444
+Dark grey: #232323
+Font (or you can use some other, choice is yours!):
+
+Alegreya Sans, in regular, bold and extra-bold style */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: flex-start;
+    /* padding: 10px 20px; */
+    width: 25%;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    background-color: #232323;
+    text-decoration: none;
+    color: white;
+    width: 15%;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.nav__link:hover {
+    background-color: #54be90;
+    color: #232323;
+
+
+}
+
+.main {
+    width: 100%;
+}
+
+.main-info {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-info__picture {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.main-info__img {
+    width: 100%;
+}
+
+.main-info__text {
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: right;
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: 400;
+    top: 100px;
+    right: 100px;
+
+}
+
+.main-info__text_h1 {
+    margin: 0;
+}
+
+.main-info__text-p {
+    margin: 0;
+    font-size: 3.2rem;
+
+}
+
+.main-info__text__link {
+    color: #54be90;
+    font-weight: 800;
+    text-decoration-color: white;
+
+}
+
+.main-info-slogan {
+    width: 100%;
+}
+
+.main-info-slogan__text {
+    color: #444444;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 0;
+}
+
+.main-info-slogan__text_strong {}
+
+.main-info-circles {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #232323;
+    position: relative;
+
+
+}
+
+.main-info-circles__circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    margin: -50px 10px;
+}
+
+.main-info-details {
+    background-color: #232323;
+    display: flex;
+}
+
+.main-info-details__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10px;
+
+}
+
+.main-info-details__article__h3 {
+    color: #54be90;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px 0 0;
+}
+
+.main-info-details__article__p {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* font-size: 1.2rem; */
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.my-skills__header {
+    color: #54be90;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.my-skills-bars {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 30px 40px;
+    width: 70%;
+
+}
+
+.my-skills-bars__bar {
+    display: flex;
+    margin: 5px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.my-skills-bars__bar__tag {
+    background-color: #232323;
+    width: 20%;
+
+}
+
+.my-skills-bars__bar__tag_p {
+    color: white;
+    text-align: center;
+}
+
+.my-skills-bars__bar_progress {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.my-skills-bars__bar_progress_current {
+    background-color: #54be90;
+    width: 80%;
+}
+
+
+
+.my-skills-bars__bar_progress_remain {
+    background-color: #ebebeb;
+    width: 20%;
+}
+
+.my-skills-bars__bar_progress_percentage {
+    color: #444444;
+    text-align: right;
+}
+
+.my-portfolio {
+    background-color: #54be90;
+    width: 100%;
+    height: 900px;
+}
+
+.my-portfolio__header {
+    color: #ebebeb;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 0 0;
+
+
+}
+
+.my-portfolio__articles {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 30px;
+
+
+}
+
+.my-portfolio__articles__article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    background-color: #ebebeb;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+.my-portfolio__articles__article:hover {
+    background-color: #232323;
+
+}
+
+.my-portfolio__articles__article__img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.my-portfolio__articles__article__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ebebeb;
+    padding: 5px;
+}
+
+.my-portfolio__articles__article__text_p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.my-portfolio__articles__article__text_h3 {
+    background-color: #ebebeb;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.my-portfolio__articles__article__text_btn {
+    background-color: #54be90;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    height: 25px;
+    margin: auto;
+    color: #ebebeb;
+}
+
+.my-portfolio__articles__article__text_btn:hover {
+    box-shadow: 5px 2px 2px #444444;
+}
+
+
+.about {
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.about__header {
+    color: #444444;
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 450px;
+}
+
+.about__info__img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.about__info__section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__info__section_text {
+    margin: 10px 0;
+}
+
+.about__info__section_text_em {
+    text-decoration: underline;
+    text-decoration-color: #54be90;
+    text-decoration-line: 10px;
+}
+
+.about__info__section_h3 {}
+
+.about__info__section_btn {
+    background-color: #54be90;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    height: 25px;
+    color: #ebebeb;
+}
+
+.about__info__section_btn:hover {
+    box-shadow: 5px 2px 2px #444444;
+}
+
+.find-me-here {
+    width: 100%;
+    background-color: #232323;
+}
+
+.find-me-here__h3 {
+    color: #ebebeb;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.find-me-here_imgs {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-bottom: 30px;
+
+}
+
+.find-me-here_imgs__img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    /* fill: #ffffff; */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #54be90;
+    width: 100%;
+    align-items: center;
+
+}
+
+.contact__header {
+    color: #ebebeb;
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+
+.contact__form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact__form__req {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.contact__form__req_input {
+    width: 49%;
+    background-color: #54be90;
+    height: 50px;
+    border: 0;
+    border-bottom: 1px solid #ebebeb;
+    color: #ebebeb;
+    font-size: 1.2rem;
+    padding: 25px 0 5px 0;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.contact__form__req_input::placeholder {
+    color: #ebebeb;
+
+
+}
+
+.contact__form__req_input:focus {
+    color: #ebebeb;
+    outline: none;
+
+}
+
+.contact__form__message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact__form__message_lbl {
+    display: flex;
+    align-items: flex-end;
+    color: #ebebeb;
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 25px 0 5px 0;
+    font-size: 1.2rem;
+
+}
+
+.contact__form__message_text {
+    color: #444444;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.contact__form__message_text:focus {
+    outline: none;
+}
+
+.contact__form__send {
+    width: 100%;
+}
+
+.contact__form__send_btn {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    height: 40px;
+    background-color: #232323;
+    border: none;
+    color: #ebebeb;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 2px;
+}
+
+.contact__form__send_btn:hover {
+    box-shadow: 5px 2px 2px #444444;
+
+}
+
+.footer {
+    background-color: #ebebeb;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.footer_greetings {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.footer_greetings_text {
+    width: 100%;
+    margin: 0;
+    padding: 50px 0 30px 0;
+    color: #232323;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.footer_imgs {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_imgs_img {
+    width: 60px;
+    height: 60px;
+    margin: 20px 30px;
+}
+
+.footer_copyright {
+    width: 100%;
+    margin: 0;
+}
+
+.footer_copyright_text {
+    padding: 30px 0 80px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+
+}
