@@ -10,6 +10,8 @@
 
 html {
     box-sizing: border-box;
+    background-color: $background-gray;
+
 }
 
 *,
@@ -19,7 +21,9 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: white;
     font-family: $font, sans-serif;
+    max-width: $content-width;
+
 }
