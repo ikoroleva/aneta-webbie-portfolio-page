@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aneta Webbie</title>
-    <link rel="icon" href="img/AW-icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&family=Caveat&family=Lato:wght@100;300;400&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@200;400&display=swap"
         rel="stylesheet">
 
-    <!-- favicon -->
 </head>
 
 <body>
@@ -22,28 +21,30 @@
 
         <nav class="nav">
             <div class="nav__logo">
-                <img class="nav__logo_img" src="img/AW-icon.png" alt="logo">
+                <img class="nav__logo__img" src="img/logo.png" alt="logo">
             </div>
-            <a class="nav__link" href="#">HOME</a>
-            <a class="nav__link" href="#">SKILLS</a>
-            <a class="nav__link" href="#">PORTFOLIO</a>
-            <a class="nav__link" href="#">ABOUT ME</a>
-            <a class="nav__link" href="#">CONTACT</a>
+            <a class="nav__link" href="#main-id">HOME</a>
+            <a class="nav__link" href="#skills-id">SKILLS</a>
+            <a class="nav__link" href="#portfolio-id">PORTFOLIO</a>
+            <a class="nav__link" href="#about-id">ABOUT ME</a>
+            <a class="nav__link" href="#contact-id">CONTACT</a>
+            <div class="nav__menu">
+                <img class="nav__menu__img" src="img/menu.png" alt="menu">
+            </div>
         </nav>
-
-
 
     </header>
     <main class="main">
-        <section class="main-info">
+        <section class="main-info" id="main-id">
             <section class="main-info__picture">
-                <div class="main-info__text">
-                    <h1 class="main-info__text_h1">Hi, I'm <a class="main-info__text__link" href="#">Aneta
-                            Webbie.</a></h1>
-                    <p class="main-info__text-p"> I'm a Full-stack Web Developer</p>
-                </div>
-                <img class="main-info__img" src="img/bg.jpg" alt="Green photo">
 
+                <img class="main-info__picture__img" src="img/dark-bg.jpg" alt="dark background">
+                <div class="main-info__picture__text">
+                    <h1 class="main-info__picture__text_h1">Hi, I'm <a class="main-info__picture__text__link"
+                            href="#">Aneta
+                            Webbie.</a></h1>
+                    <p class="main-info__picture__text_p"> I'm a Full-stack Web Developer</p>
+                </div>
             </section>
 
 
@@ -86,101 +87,101 @@
                 </article>
             </section>
         </section>
-        <section class="my-skills">
+        <section class="my-skills" id="skills-id">
             <h2 class="my-skills__header">MY SKILLS</h2>
             <section class="my-skills-bars">
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_html">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">HTML</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">80%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">80%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_css">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">CSS, Sass</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">80%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">80%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_js">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">JavaScript</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">70%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">70%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_react">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">React</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">60%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">60%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_jquery">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">jQuery</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">70%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">70%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_php">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">PHP</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">60%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">60%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_laravel">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">Laravel</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">60%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">60%</p>
                         </div>
                     </div>
                 </section>
-                <section class="my-skills-bars__bar">
+                <section class="my-skills-bars__bar_ux">
                     <div class="my-skills-bars__bar__tag">
                         <p class="my-skills-bars__bar__tag_p">UX</p>
                     </div>
-                    <div class="my-skills-bars__bar_progress">
-                        <div class="my-skills-bars__bar_progress_current"></div>
-                        <div class="my-skills-bars__bar_progress_remain">
-                            <p class="my-skills-bars__bar_progress_percentage">50%</p>
+                    <div class="my-skills-bars__bar__progress">
+                        <div class="my-skills-bars__bar__progress_current"></div>
+                        <div class="my-skills-bars__bar__progress_remain">
+                            <p class="my-skills-bars__bar__progress_percentage">50%</p>
                         </div>
                     </div>
                 </section>
             </section>
 
         </section>
-        <section class="my-portfolio">
+        <section class="my-portfolio" id="portfolio-id">
             <h2 class="my-portfolio__header">MY PORTFOLIO</h2>
             <div class="my-portfolio__articles">
                 <article class="my-portfolio__articles__article">
@@ -268,7 +269,7 @@
                 </article>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about-id">
             <h2 class="about__header">ABOUT ME</h2>
             <article class="about__info">
                 <img class="about__info__img" src="img/girl-photo.jpg" alt="My photo">
@@ -296,7 +297,7 @@
                 <img class="find-me-here_imgs__img" src="img/instagram.svg" alt="Instagram">
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact-id">
             <h2 class="contact__header">CONTACT ME</h2>
             <form class="contact__form" action="_self">
                 <div class="contact__form__req">

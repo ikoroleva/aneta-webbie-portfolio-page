@@ -1,0 +1,75 @@
+.header {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+
+
+    &__logo {
+        min-width: 25%;
+        height: 3rem;
+
+        @media (max-width: $mobilwidth) {
+            min-width: 50%;
+
+        }
+
+        &__img {
+            max-height: 100%;
+            padding-left: 2rem;
+
+
+        }
+
+        @media (max-width: $mobilwidth) {
+            justify-content: space-between;
+        }
+    }
+
+
+    &__link {
+        display: flex;
+        align-items: center;
+        background-color: $dark-grey;
+        text-decoration: none;
+        color: $white;
+        min-width: 15%;
+        justify-content: center;
+        text-align: center;
+
+
+        &:hover {
+            background-color: $green;
+            color: $dark-grey;
+        }
+
+        @media (max-width: $mobilwidth) {
+            display: none;
+        }
+
+
+    }
+
+    &__menu {
+        display: none;
+
+        @media (max-width: $mobilwidth) {
+            display: flex;
+            justify-content: flex-end;
+            min-width: 50%;
+            padding: .5em 1em;
+
+        }
+
+        &__img {
+            padding: .5em 0 0 0;
+        }
+
+    }
+
+
+}

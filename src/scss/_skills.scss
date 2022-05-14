@@ -1,0 +1,108 @@
+@mixin skills($current-width, $remain_width) {
+    display: flex;
+    justify-content: flex-start;
+    margin: .5rem;
+    height: 3em;
+
+
+    .my-skills-bars__bar__tag {
+
+        background-color: $dark-grey;
+        min-width: 20%;
+
+        &_p {
+            color: $white;
+            font-weight: 300;
+            text-align: center;
+        }
+
+    }
+
+    .my-skills-bars__bar__progress {
+
+        min-width: 80%;
+        display: flex;
+        justify-content: flex-start;
+
+        &_current {
+            background-color: $green;
+            width: $current-width;
+        }
+
+        &_remain {
+            background-color: $light-grey;
+            color: $dark-grey;
+            width: $remain_width;
+            margin: 0;
+            text-align: right;
+            padding: 0 1rem;
+        }
+    }
+
+}
+
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        color: $green;
+        font-size: 3em;
+        text-align: center;
+        margin: 1em auto 0;
+    }
+}
+
+.my-skills-bars {
+    display: flex;
+    width: 70%;
+    margin: 2em auto 3em;
+    flex-direction: column;
+
+}
+
+
+.my-skills-bars__bar_html {
+
+    @include skills(80%, 20%);
+
+}
+
+.my-skills-bars__bar_css {
+
+    @include skills(80%, 20%);
+}
+
+.my-skills-bars__bar_js {
+
+    @include skills(80%, 20%);
+}
+
+
+.my-skills-bars__bar_react {
+
+    @include skills(60%, 40%);
+}
+
+.my-skills-bars__bar_jquery {
+
+    @include skills(70%, 30%);
+}
+
+.my-skills-bars__bar_php {
+
+    @include skills(60%, 40%);
+}
+
+.my-skills-bars__bar_laravel {
+
+    @include skills(60%, 40%);
+}
+
+
+.my-skills-bars__bar_ux {
+
+    @include skills(50%, 50%);
+}
