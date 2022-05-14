@@ -1,0 +1,115 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: $green;
+    width: 100%;
+    align-items: center;
+
+    &__header {
+        color: $light-grey;
+        font-size: 3rem;
+        text-align: center;
+        padding: 30px;
+        margin: 0;
+    }
+
+    &__form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__req {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &_input {
+                width: 49%;
+                background-color: $green;
+                height: 50px;
+                border: 0;
+                border-bottom: 1px solid $light-grey;
+                color: $light-grey;
+                font-size: 1.2rem;
+                padding: 25px 0 5px 0;
+                font-family: 'Alegreya Sans', sans-serif;
+
+                @media (max-width: $mobilwidth) {
+                    min-width: 100%;
+
+                }
+
+                &::placeholder {
+                    color: $light-grey;
+
+
+                }
+
+                &:focus {
+                    color: $light-grey;
+                    outline: none;
+
+                }
+            }
+
+
+
+        }
+
+        .contact__form__message {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            &_lbl {
+                display: flex;
+                align-items: flex-end;
+                color: $light-grey;
+                height: 50px;
+                font-size: 1.5rem;
+                padding: 25px 0 5px 0;
+                font-size: 1.2rem;
+
+            }
+
+            &_text {
+                color: $dark-grey;
+                border: none;
+                font-size: 1.2rem;
+                border-radius: 4px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+        }
+
+        &__send {
+            width: 100%;
+
+
+            &_btn {
+                width: 100%;
+                margin: 20px 0 20px 0;
+                height: 40px;
+                background-color: $dark-grey;
+                border: none;
+                color: $light-grey;
+                font-size: 1.2rem;
+                font-weight: 800;
+                border-radius: 2px;
+
+                &:hover {
+                    box-shadow: 5px 2px 2px $dark-grey;
+
+                }
+            }
+        }
+
+    }
+
+
+}

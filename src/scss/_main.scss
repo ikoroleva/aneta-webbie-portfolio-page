@@ -21,13 +21,12 @@
             color: $white;
             font-family: $font, sans-serif;
             position: absolute;
-            bottom: 24rem;
+            top: 10em;
             padding: 1em 5em;
 
             @media (max-width: $mobilwidth) {
                 text-align: center;
                 font-size: 0.9em;
-                bottom: 23em;
 
             }
 
